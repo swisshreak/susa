@@ -1,0 +1,29 @@
+pipeline {
+    
+    agent any
+        
+    stages{
+        stage('susa') {
+            steps {
+                echo 'Hello world'
+        
+            }
+        }
+        
+        stage('test') {
+            steps {
+            echo "this is testing"
+                
+            }
+        }
+        
+       stage('final') {
+           steps {
+               echo "this is final"
+               
+           }
+               
+           }
+    }
+    
+}
